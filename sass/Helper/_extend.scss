@@ -1,0 +1,6 @@
+.noBorder{
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}

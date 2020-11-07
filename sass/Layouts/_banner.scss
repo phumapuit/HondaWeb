@@ -1,0 +1,96 @@
+.banner{
+    background-color: $color-blue-tittle;
+    height: 250px;
+    margin-bottom: 250px;
+    position: relative;
+    .banner__container{
+        position: absolute;
+        bottom: -250px;
+        left: 0;
+        height: 250px;
+        width: 100%;
+        background-color: whitesmoke;
+        z-index: 0;
+    }
+    .banner__content{
+        width: 88%;
+        margin: 0 auto;
+        padding: 70px 0;
+        display: flex;
+        justify-content: space-between;
+        .banner__item{
+            position: relative;
+            z-index: 1;
+            width: 48%;
+            height: 370px;
+            background-position: center;
+            background-size: cover;
+        }
+        .item-left{
+            background-image: url('../imgs/carousel-small-1.jpg');
+            position: relative;
+            .banner__text-bottom{
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: 10%;
+                color: $color-white;
+                p{
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+                button{
+                    padding: 3px 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .item-right{
+            background-image: url('../imgs/carousel-small-2.jpg');
+            position: relative;
+            .banner__text-left{
+                position: absolute;
+                width: 37%;
+                left: 6%;
+                top: 32%;
+                color: $color-white;
+                font-size: 16px;
+                font-weight: bold;
+                
+            }
+            span{
+                background-color: #0171B1;
+                padding: 7px 10px;
+            }
+            p{
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+            button{
+                padding: 3px 15px;
+                font-size: 15px;
+                min-width: 165px;
+            }
+        }
+    }
+}
+@include responsive('breakpoint-1'){
+    .banner{
+        .banner__content{
+            .item-right{
+                background-image: url('../imgs/carousel-small-2-res-1.jpg');
+                .banner__text-left{
+                    width: 88%;
+                }
+                p{
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+}
+@include responsive('medium'){
+    .banner{
+        display: none;
+    }
+}

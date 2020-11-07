@@ -1,0 +1,90 @@
+.contact{
+    background-color: rgb(245, 245, 245);
+    .contact__content{
+        width: 95%;
+        margin: 0 auto;
+        .contact__top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+            img{
+                width: 144px;
+                height: 87px;
+            }
+        }
+        .contact__bottom{
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+            .contact__touch{
+                width: 33%;
+                p{
+                    font-weight: bold;
+
+                }
+                i{
+                    font-size: 25px;
+                    color: $color-blue-nav;
+                    margin-right: 10px;
+                }
+            }
+            .contact__search{
+                position: relative;
+                width: 33%;
+            }
+            .contact__informed{
+                width: 33%;
+                text-align: right;
+                p{
+                    font-weight: bold;    
+                }
+                button{
+                    padding: 4px 25px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $color-blue-nav;
+                    border-color: $color-blue-nav;
+                    &:hover{
+                        color: white;
+                        background-color: $color-blue-nav;
+                    }
+                }
+            }
+            
+        }
+        .contact__search-down{
+            display: none;
+            max-width: 500px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+            input{
+                margin-top: 0;
+            }
+        }
+    }
+}
+@include responsive('breakpoint-1'){
+    .contact{
+        .contact__content{
+            .contact__bottom{
+                .contact__touch{
+                    width: 50%;
+                }
+                .contact__search{
+                    display: none;
+                }
+                .contact__informed{
+                    width: 50%;
+                }
+                
+            }
+            .contact__search-down{
+                display: block;
+            }
+        }
+    }
+}

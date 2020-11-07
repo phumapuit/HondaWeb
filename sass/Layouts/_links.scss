@@ -1,0 +1,138 @@
+.links{
+    background-color: rgb(245, 245, 245);
+    .links__content{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        // width: 95%;
+        // margin: 0 auto;
+        .links__item{
+            width: 20%;
+            .navbar{
+                display: block;
+                h5{
+                    font-size: 14px;
+                    font-weight: $fw-3;
+                    color: $color-blue-tittle;
+                    padding-left: 21px;
+                }
+                .navbar-collapse{
+                    .navbar-nav{
+                        display: block;
+                        padding-left: 14px;
+                        .nav-link{
+                            color: $color-blue-tittle;
+                            font-size: 13px;
+                            padding-bottom: 2px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@include responsive ('breakpoint-1'){
+    .links{
+        .links__content{
+            display: block;
+            .links__item{
+                width: 100%;    
+                border-top: 1px solid rgba(0, 0, 0, 0.178);
+                .navbar{
+                    padding: 0;
+                    h5{
+                        display: none;
+                    }
+                    .navbar-collapse{
+                        .navbar-nav{
+                            background-color: white;
+                            padding-left: 45px;
+                            .nav-item{
+                                border-bottom: none;
+                                margin: 0px;
+                                &:nth-child(9){
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                }
+                                .nav-link{
+                                    font-size: 13px;
+                                    text-transform: none;
+                                    padding: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                button{
+                    width: 100%;
+                    text-align: left;
+                    padding: 10px 25px;
+                    border: none;
+                    p{
+                        color: $color-blue-tittle;
+                        font-size: 14px;
+                        font-weight: $fw-3;
+                    }
+                    .open-circle{
+                        position: relative;
+                        width: 24px;
+                        height: 24px;
+                        background-color: white;
+                        border: 2px solid $color-blue-nav;
+                        border-radius: 50%;
+                        float: right;
+                        .top-bar{
+                            position: absolute;
+                            width: 2px;
+                            height: 14px;
+                            background-color: $color-blue-nav;
+                            top: 3px;
+                            left: 9px;
+                            opacity: 1;
+                        }
+                        .mid-bar{
+                            position: absolute;
+                            width: 14px;
+                            height: 2px;
+                            background-color: $color-blue-nav;
+                            top: 9px;
+                            left: 3px;
+                        }
+                        
+                    }
+                    &:not(.collapsed){
+                        background-color: white;
+                        .top-bar{
+                            opacity: 0;
+                        }
+                    }
+                    
+                }
+                    
+            }
+        }
+    }
+}
+@include responsiveMin('breakpoint-1-1'){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        .navbar-nav{
+            flex-direction: row;
+            
+            .nav-link{
+                padding-right: .5rem;
+                padding-left: .5rem;
+            }
+        }  
+        .navbar-collapse{
+            display: flex!important;
+        }
+        .navbar-toggler{
+            display: none;
+        }
+    }
+}

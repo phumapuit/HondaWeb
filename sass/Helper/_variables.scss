@@ -1,0 +1,38 @@
+// variable color
+$color-white: white;
+$color-black: black;
+$color-blue-text-nav-hover:#00446b;
+$color-blue-nav:#007cc0;
+$color-blue-text:#06456a;
+$color-blue-text-hover:#2198dc;
+$color-blue-tittle:#00324f;
+$color-red:#e42525;
+$color-trans: transparent;
+
+// variable font-size
+
+$fs-text-nav: 14px;
+$fs-text-0: 1.4rem;
+$fs-text-1: 1.2rem;
+$fs-money: 3.6rem;
+
+$fw-1:300;
+$fw-2:400;
+$fw-3:700;
+
+$pd-1:0.9rem;
+$pd-2:2.4rem;
+$border-radius: 1.95rem;
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+    'breakpoint-nav': 1051px,
+    'breakpoint-1': 1024px,
+    'breakpoint-1-1':1025px,
+    'breakpoint-2': 767px,
+    'breakpoint-3': 550px
+    
+)
