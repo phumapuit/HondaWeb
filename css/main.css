@@ -641,6 +641,7 @@ header .navbar-collapse .navbar-nav .nav-item:last-child .nav-link i {
 
 .banner__res {
   background-color: whitesmoke;
+  padding: 30px 20px;
 }
 
 .banner__res .banner__res-top {
@@ -648,6 +649,7 @@ header .navbar-collapse .navbar-nav .nav-item:last-child .nav-link i {
   background-size: cover;
   background-position: center;
   height: 400px;
+  margin-bottom: 30px;
 }
 
 .banner__res .banner__res-bottom {
@@ -663,7 +665,6 @@ header .navbar-collapse .navbar-nav .nav-item:last-child .nav-link i {
 }
 
 .banner__res .banner__contents {
-  margin: 0px 20px;
   position: relative;
 }
 

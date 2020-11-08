@@ -77,11 +77,13 @@
 
 .banner__res{
     background-color: whitesmoke;
+    padding: 30px 20px;
     .banner__res-top{
         background-image: url("../imgs/carousel-small-1.jpg");
         background-size: cover;
         background-position: center;
         height: 400px;
+        margin-bottom: 30px;
     }
     .banner__res-bottom{
         background-image: url("../imgs/carousel-small-2-res-2.jpg");
@@ -95,7 +97,6 @@
         }
     }
     .banner__contents{
-        margin: 0px 20px;
         position: relative;
         .banner__text{
             position: absolute;
