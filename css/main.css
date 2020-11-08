@@ -85,6 +85,28 @@ html, body {
   color: #007cc0;
 }
 
+.hondabtn-blue-white {
+  background-color: #007cc0;
+  border: 1px solid #007cc0;
+  border-radius: 1.95rem;
+  padding: 0.9rem 2.4rem;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: block;
+  line-height: normal;
+  margin: 0 auto;
+  padding: 0.8rem 0;
+  width: 10rem;
+  font-weight: 600;
+}
+
+.hondabtn-blue-white:hover {
+  background-color: white;
+  border-color: #007cc0;
+  color: #007cc0;
+}
+
 .search__text {
   width: 100%;
   position: relative;
@@ -381,6 +403,10 @@ header .navbar-collapse .navbar-nav .nav-item:last-child .nav-link i {
   .navbar .navbar-collapse .navbar-nav .nav-item.d-custom {
     display: block;
   }
+}
+
+.hondaCarousel {
+  padding-top: 50px;
 }
 
 .hondaCarousel .hondaCarousel__content {

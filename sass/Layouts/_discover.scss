@@ -1,0 +1,82 @@
+// .discover {
+//     padding-top: 50px;
+//     width: 90%;
+//     margin: 0 auto;
+//     h2 {
+//         text-align: center;
+//         font-size: 6rem;
+//         font-weight: 300;
+//         color: #00324f;
+//         margin-bottom: 3rem;
+//     }
+//     p {
+//         text-align: center;
+//         margin-bottom: 3rem;
+//         font-size: 1.4rem;
+//         font-weight: 300;
+//         color: #00324f;
+//     }
+//     .discover__content {
+//         display: flex;
+//         justify-content: center;
+//         .discover__item {
+//             color: #00324f;
+//             box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+//             position: relative;
+//             min-height: 530px;
+//             img {
+//                 display: block;
+//                 width: 100%;
+//             }
+//             .discover__text {
+//                 text-align: center;
+//                 padding: 0 36px 40px;
+//                 min-height: 270px;
+//                 h5 {
+//                     margin-top: 2rem;
+//                     font-size: 1.6rem;
+//                     min-height: 40px;
+//                     @include responsive("extra-large") {
+//                         font-size: 1.4rem;
+//                     }
+//                 }
+//                 p {
+//                     margin-top: 20px;
+//                     font-size: 1.4rem;
+//                     @include responsive("extra-large") {
+//                         font-size: 1.2rem;
+//                     }
+//                     @include responsive("large") {
+//                         font-size: 1.1rem;
+//                     }
+//                 }
+//             }
+//             button {
+//                 position: absolute;
+//                 width: 140px;
+//                 bottom: 40px;
+//                 left: 50%;
+//                 transform: translateX(-50%);
+//             }
+//         }
+//         @include responsive("medium") {
+//             .d-block {
+//                 display: flex;
+//                 justify-content: center;
+//                 .discover__item {
+//                     max-width: 290px;
+//                     margin: 0 auto;
+//                     min-height: 220px;
+//                 }
+//             }
+//         }
+//     }
+//     .hondabtn-red {
+//         display: block;
+//         line-height: normal;
+//         margin: 0 auto;
+//         padding: 1rem 2rem;
+//         font-weight: 600;
+//         margin-bottom: 80px;
+//     }
+// }

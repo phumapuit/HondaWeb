@@ -1,0 +1,214 @@
+// .ourVehicles {
+//     background-color: rgb(245, 245, 245);
+//     h3 {
+//         padding-top: 3.5rem;
+//         padding-bottom: 2.5rem;
+//         font-size: 6rem;
+//         font-weight: 200;
+//         text-align: center;
+//         color: #06456a;
+//     }
+//     .nav-tabs {
+//         width: 50%;
+//         margin: 0 auto;
+//         border: none;
+//         display: flex;
+//         justify-content: space-around;
+//         margin-bottom: 20px;
+//         font-size: 1.4rem;
+//         @include responsive("extra-large") {
+//             width: 70%;
+//         }
+//         @include responsive("large") {
+//             width: 80%;
+//         }
+//         @include responsive("medium") {
+//             width: 90%;
+//         }
+//         a {
+//             color: #00324f;
+//             font-size: 1.4rem;
+//             font-weight: 600;
+//             border: none;
+//             background: none;
+//             padding: 0;
+//             &:hover {
+//                 color: #2198dc;
+//             }
+//             @include responsive("extra-large") {
+//                 font-size: 1.4rem;
+//             }
+//             @include responsive("large") {
+//                 font-size: 1.2rem;
+//             }
+//             @include responsive("medium") {
+//                 font-size: 1rem;
+//             }
+//         }
+//         a.active {
+//             background: none;
+//             border-bottom: 5px solid #007cc0;
+//             color: #007cc0;
+//         }
+//     }
+//     .carousel-item {
+//         position: relative;
+//         .carousel__item {
+//             position: absolute;
+//             top: 38px;
+//             left: 86px;
+//             width: 33rem;
+//             @include responsive("extra-large") {
+//                 top: 28px;
+//             }
+//             @include responsive("large") {
+//                 top: 18px;
+//             }
+//             @include responsive ("medium"){
+//                 display: block;
+//             }
+//             h5 {
+//                 font-size: 1.4rem;
+//                 font-weight: 600;
+//                 color: #fff;
+//                 span:first-child {
+//                     margin-right: 10px;
+//                 }
+//                 span:last-child {
+//                     font-weight: 300;
+//                 }
+//                 @include responsive("extra-large") {
+//                     font-size: 1.2rem;
+//                 }
+//             }
+//             img {
+//                 width: 303.6px;
+//                 margin-top: 80px;
+//                 @include responsive("extra-large") {
+//                     width: 250px;
+//                     margin-top: 50px;
+//                 }
+//                 @include responsive("large") {
+//                     width: 200px;
+//                     margin-top: 35px;
+//                 }
+//                 @include responsive("medium") {
+//                     width: 180px;
+//                     margin-top: 20px;
+//                 }
+//             }
+//             p {
+//                 width: 33rem;
+//                 color: #fff;
+//                 font-size: 1.4rem;
+//                 padding-bottom: 2rem;
+//                 @include responsive("extra-large") {
+//                     width: 250px;
+//                     font-size: 1.2rem;
+//                     padding-bottom: 1rem;
+//                 }
+//                 @include responsive("large") {
+//                     width: 200px;
+//                     font-size: 1.1rem;
+//                     padding-bottom: 1rem;
+//                 }
+//                 @include responsive("medium") {
+//                     width: 150px;
+//                     font-size: 1rem;
+//                     padding-bottom: 0.6rem;
+//                 }
+//             }
+//             .stat__item {
+//                 display: flex;
+//                 h4 {
+//                     font-size: 4.4rem;
+//                     font-weight: 300;
+//                     color: #fff;
+//                     margin-bottom: 10px;
+//                     @include responsive("extra-large") {
+//                         font-size: 2.6rem;
+//                     }
+//                     @include responsive("large") {
+//                         font-size: 1.8rem;
+//                     }
+//                 }
+//                 p {
+//                     color: #f6f6f6;
+//                     font-size: 1.2rem;
+//                     font-weight: 600;
+//                     span {
+//                         color: rgb(95, 231, 255);
+//                     }
+//                     @include responsive("large") {
+//                         font-size: 0.9rem;
+//                     }
+//                 }
+//                 .cost__item {
+//                     width: 220px;
+//                     @include responsive("extra-large") {
+//                         width: 150px;
+//                     }
+//                     @include responsive("large") {
+//                         width: 120px;
+//                     }
+//                 }
+//             }
+//             .carousel__button {
+//                 .hondabtn-red,
+//                 .hondabtn-white {
+//                     width: 12.5rem;
+//                     transition: all 0.3s;
+//                     margin-right: 10px;
+//                 }
+//                 .hondabtn-blue-white {
+//                     width: 25rem;
+//                     border-color: #fff;
+//                 }
+//             }
+//             .carousel__optional {
+//                 width: 660px;
+//                 display: flex;
+//                 align-items: center;
+//                 height: 70px;
+//                 margin-top: 90px;
+//                 border-top: 2px solid hsla(0, 0%, 100%, 0.2);
+//                 @include responsive("breakpoint-0") {
+//                     display: none;
+//                 }
+//                 p {
+//                     padding-bottom: 0;
+//                     font-weight: 600;
+//                     cursor: pointer;
+//                 }
+//                 img {
+//                     width: 250px;
+//                     height: 60px;
+//                     margin-top: 0;
+//                 }
+//             }
+//         }
+//     }
+//     .tab-content {
+//         position: relative;
+//         .custom__control {
+//             font-size: 4rem;
+//             color: #2198dc;
+//             background: #fff;
+//             width: 40px;
+//             height: 70px;
+//             top: 50%;
+//             transform: translateY(-50%);
+//             padding: 20px;
+//             opacity: 1;
+//             &:hover {
+//                 color: #23527c;
+//             }
+//         }
+//         .carousel-control-prev {
+//             border-radius: 0 6px 6px 0;
+//         }
+//         .carousel-control-next {
+//             border-radius: 6px 0 0 6px;
+//         }
+//     }
+// }
