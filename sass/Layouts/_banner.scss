@@ -74,6 +74,48 @@
         }
     }
 }
+
+.banner__res{
+    background-color: whitesmoke;
+    .banner__res-top{
+        background-image: url("../imgs/carousel-small-1.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
+    .banner__res-bottom{
+        background-image: url("../imgs/carousel-small-2-res-2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        
+        span{
+            background-color: #0171B1;
+            padding: 6px 24px;
+        }
+    }
+    .banner__contents{
+        margin: 0px 20px;
+        position: relative;
+        .banner__text{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 10%;
+            color: $color-white;
+            p{
+                font-size: 17px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            button{
+                padding: 3px 15px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
 @include responsive('breakpoint-1'){
     .banner{
         .banner__content{
@@ -89,7 +131,7 @@
         }
     }
 }
-@include responsive('medium'){
+@include responsive('breakpoint-2'){
     .banner{
         display: none;
     }

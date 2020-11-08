@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop Current & Upcoming Vehicles</title>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
@@ -128,6 +128,21 @@
     <section class="ourVehicles"></section>
     <section class="services"></section>
     <section class="discover"></section>
+    <div class="banner__res d-md-none">
+        <div class="banner__res-top banner__contents">
+            <div class="banner__text">
+                <p>See 2020 Accord offers near you.</p>
+                <button class="hondabtn-trans">SEE OFFERS</button>
+            </div>
+        </div>
+        <div class="banner__res-bottom banner__contents">
+            <div class="banner__text">
+                <span>BUILD & PRICE</span>
+                <p>Personalize a 2020 CIVIC Si COUPE to make it your own.</p>
+                <button class="hondabtn-trans">BUILD MY VEHICLE</button>
+            </div>
+        </div>
+    </div>
     <section class="contact">
         <div class="contact__content">
             <div class="contact__top">
@@ -136,13 +151,13 @@
             <div class="contact__bottom row">
                 <div class="contact__touch px-0">
                     <p>Stay In Touch</p>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-pinterest"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-snapchat"></i>
-                    <i class="fab fa-youtube"></i>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-pinterest"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-snapchat"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="contact__search px-0">
                     <div class="search__text">
@@ -431,7 +446,7 @@
     <script>
         $(document).ready(function(){
             $('.single-item').slick({
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 3000,
                 dots: true,
                 infinite: false,

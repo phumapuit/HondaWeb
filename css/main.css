@@ -437,6 +437,7 @@ header .navbar-collapse .navbar-nav .nav-item:last-child .nav-link i {
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: -40px;
+  z-index: 100;
 }
 
 .hondaCarousel .slick-dots li {
@@ -638,6 +639,53 @@ header .navbar-collapse .navbar-nav .nav-item:last-child .nav-link i {
   min-width: 165px;
 }
 
+.banner__res {
+  background-color: whitesmoke;
+}
+
+.banner__res .banner__res-top {
+  background-image: url("../imgs/carousel-small-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.banner__res .banner__res-bottom {
+  background-image: url("../imgs/carousel-small-2-res-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.banner__res .banner__res-bottom span {
+  background-color: #0171B1;
+  padding: 6px 24px;
+}
+
+.banner__res .banner__contents {
+  margin: 0px 20px;
+  position: relative;
+}
+
+.banner__res .banner__contents .banner__text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10%;
+  color: white;
+}
+
+.banner__res .banner__contents .banner__text p {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.banner__res .banner__contents .banner__text button {
+  padding: 3px 15px;
+  font-size: 15px;
+}
+
 @media screen and (max-width: 1024px) {
   .banner .banner__content .item-right {
     background-image: url("../imgs/carousel-small-2-res-1.jpg");
@@ -650,7 +698,7 @@ header .navbar-collapse .navbar-nav .nav-item:last-child .nav-link i {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .banner {
     display: none;
   }
