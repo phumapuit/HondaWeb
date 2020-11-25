@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,16 @@
     <link rel="icon" href="./imgs/logo-icon.png" type="image/gif">
     <title>Shop Current & Upcoming Vehicles</title>
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
 
     <!-- FONT GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- BS4 css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- SLICK -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -21,14 +25,16 @@
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
+
 <body>
     <header>
         <!-- navbar-expand-lg -->
         <nav class="navbar  open-navbar navbar-light">
             <a class="navbar-brand" href="#"><img src="./imgs/logo-honda.svg" alt=""></a>
             <i class="fa fa-map-marker-alt"></i>
-            <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                
+            <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
                 <span class="res-bar top-bar"></span>
                 <span class="res-bar mid-bar"></span>
                 <span class="res-text">menu</span>
@@ -115,7 +121,7 @@
                     <button class="hondabtn-trans">SEE OFFERS</button>
                 </div>
             </div>
-            
+
             <div class="banner__item item-right">
                 <div class="banner__text-left">
                     <span>BUILD & PRICE</span>
@@ -123,654 +129,508 @@
                     <button class="hondabtn-trans">BUILD MY VEHICLE</button>
                 </div>
             </div>
-            
+
         </div>
         <div class="banner__container"></div>
     </section>
-    <!-- <section class="ourVehicles">
-        <h3>Our Vehicles</h3>
+    <section class="ourVehicles">
+        <h2>Our Vehicles</h2>
         <div class="ourVehicles__content">
+            <!-- multiple-items -->
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#cars" role="tab"
-                        aria-controls="home" aria-selected="true">CARS</a>
+                <li class="nav-item item " role="presentation">
+                    <a class="nav-link active" id="cars-tab" data-toggle="tab" href="#cars" role="tab" aria-controls="cars"
+                        aria-selected="true">CARS</a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#suvs-crossovers" role="tab"
-                        aria-controls="profile" aria-selected="false">SUVS & CROSSOVERS</a>
+                <li class="nav-item item" role="presentation">
+                    <a class="nav-link" id="suvs-tab" data-toggle="tab" href="#suvs" role="tab"
+                        aria-controls="suvs" aria-selected="false">SUVS & CROSSOVERS</a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#minivan-truck" role="tab"
-                        aria-controls="contact" aria-selected="false">MINIVAN & TRUCK</a>
+                <li class="nav-item item" role="presentation">
+                    <a class="nav-link" id="minivan-tab" data-toggle="tab" href="#minivan" role="tab"
+                        aria-controls="minivan" aria-selected="false">MINIVAN & TRUCK</a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#electrified" role="tab"
-                        aria-controls="contact" aria-selected="false">ELECTRIFIED</a>
+                <li class="nav-item item" role="presentation">
+                    <a class="nav-link" id="electric-tab" data-toggle="tab" href="#electric" role="tab"
+                        aria-controls="electric" aria-selected="false">ELECTRIFIED</a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#preowned" role="tab"
-                        aria-controls="contact" aria-selected="false">PRE-OWNED</a>
+                <li class="nav-item item" role="presentation">
+                    <a class="nav-link" id="pre-tab" data-toggle="tab" href="#pre" role="tab"
+                        aria-controls="pre" aria-selected="false">PRE-OWNED</a>
+                </li>
+                <li class="nav-item item" role="presentation">
+                    <a class="nav-link" id="future-tab" data-toggle="tab" href="#future" role="tab"
+                        aria-controls="future" aria-selected="false">FUTURE</a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="cars" role="tabpanel" aria-labelledby="home-tab">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./imgs/cars-1.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>1</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/accord.PNG" alt="">
-                                    <p>With three advanced powertrains, a cabin full of technological innovations and
+                <div class="tab-pane fade show active single-item" id="cars" role="tabpanel" aria-labelledby="cars-tab">
+                    <div class="item vehicles__item item-1">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>1</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>ACCORD<span>Redesigned</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        With three advanced powertrains, a cabin full of technological innovations and
                                         Honda Sensing® standard on all trims, the Accord is everything a sedan should be
-                                        and more. </p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$24,770</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                                        and more.
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 24,770</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>30 / 38</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-2.webp" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-2.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>2</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/accord-2.PNG" alt="">
-                                    <p>Sophisticated on the outside. Tech-forward on the inside. Add efficiency and
-                                        exhilaration to every drive in the no-compromise Accord Hybrid.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$26,370</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE ACCORD FAMILY ></span>
+                                <img src="./imgs/car-small-2.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-2">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>2</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>ACCORD<span>Redesigned</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        Sophisticated on the outside. Tech-forward on the inside. Add efficiency and
+                                        exhilaration to every drive in the no-compromise Accord Hybrid.
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 26,370</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>48 / 48</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-2.webp" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-3.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>3</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/civic.PNG" alt="">
-                                    <p>With fresh looks, innovative technology and sporty performance, the Civic Sedan
-                                        delivers more fun inside and out.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$21,050</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE ACCORD FAMILY ></span>
+                                <img src="./imgs/car-small-1.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-3">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>3</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>CIVIC<span>2021</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        With fresh looks, innovative technology and sporty performance, the Civic Sedan
+                                        delivers more fun inside and out.
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 21,050</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>30 / 38</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-1.webp" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-4.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>4</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/civic-coupe.PNG" alt="">
-                                    <p>The two-door thrill ride blends sophistication and exhilaration, with updated
-                                        styling and an available turbocharged engine.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$21,050</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE ACCORD FAMILY ></span>
+                                <img src="./imgs/car-small-2.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-4">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>4</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>CIVIC<span>Coupe</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        The two-door thrill ride blends sophistication and exhilaration, with updated
+                                        styling and an available turbocharged engine.
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 21,050</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>30 / 38</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-1.webp" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-5.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>5</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/civic-hatchback.PNG" alt="">
-                                    <p>The Civic Hatchback blends distinctive styling and streetwise versatility into an
-                                        unmistakable five-door package.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$22,000</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE ACCORD FAMILY ></span>
+                                <img src="./imgs/car-small-1.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-5">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>5</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>CIVIC<span>2021</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        The Civic Hatchback blends distinctive styling and streetwise versatility into
+                                        an unmistakable five-door package.
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 22,000</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>31 / 40</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-1.webp" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-7.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>6</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/civic-si.PNG" alt="">
-                                    <p>A quick-shifting 6-speed manual transmission. An aggressive, angular body. It can
-                                        be only one vehicle: the legendary Civic Si Sedan.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$25,200</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE ACCORD FAMILY ></span>
+                                <img src="./imgs/car-small-2.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-6">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>6</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>CIVICSi<span>2020</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        A quick-shifting 6-speed manual transmission. An aggressive, angular body. It
+                                        can be only one vehicle: the legendary Civic Si Sedan.
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 25,200</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>26 / 36</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-1.webp" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-8.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>7</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/civic-si-coupe.PNG" alt="">
-                                    <p>One of 2020’s most exciting returns: the legendary power and aggressive body
-                                        style of the Civic Si Coupe.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$25,200</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE CIVIC FAMILY ></span>
+                                <img src="./imgs/car-small-1.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-7">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>7</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>CIVICSi<span>2020</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        One of 2020’s most exciting returns: the legendary power and aggressive body
+                                        style of the Civic Si Coupe
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 25,200</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>26 / 36</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-1.webp" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-9.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>8</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/civic-typeR.PNG" alt="">
-                                    <p>The high-performance hatchback is ready to tear up the track. A new Limited
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE ACCORD FAMILY ></span>
+                                <img src="./imgs/car-small-2.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-8">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>8</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>CIVIC<span>2021</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        The high-performance hatchback is ready to tear up the track. A new Limited
                                         Edition trim in Phoenix Yellow adds distinctive styling with 46 pounds of
                                         weight-reduction modifications, making it the lightest Civic Type R ever brought
-                                        to the U.S.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$37,495</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                                        to the U.S.
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 37,495</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>22 / 28</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional mt-5">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-1.webp" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-10.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>9</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/insight.PNG" alt="">
-                                    <p>With an mpg rating of up to 55 city, this hybrid is more than just a beautiful
-                                        ride. It’s also an efficient and environmentally responsible vehicle.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$22,930</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE ACCORD FAMILY ></span>
+                                <img src="./imgs/car-small-1.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-9">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>9</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>ACCORD<span>Redesigned</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        With an mpg rating of up to 55 city, this hybrid is more than just a beautiful
+                                        ride. It’s also an efficient and environmentally responsible vehicle
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 22,930</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>55 / 49</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-2.PNG" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-11.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>10</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/fit.PNG" alt="">
-                                    <p>The Fit delivers style to your lifestyle with a sporty outside, loads of
-                                        technology inside and ample cargo space for everyday adventures.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$16,190</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE ACCORD FAMILY ></span>
+                                <img src="./imgs/car-small-2.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-10">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>10</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>INSIGHT<span>2021</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        The Fit delivers style to your lifestyle with a sporty outside, loads of
+                                        technology inside and ample cargo space for everyday adventures
+                                    </p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 16,190</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>29 / 36</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>CITY/HWY MPG RATING*</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional d-none">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-2.PNG" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-12.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>11</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/clarity.PNG" alt="">
-                                    <p>With roomy seating for five adults and a class-leading 47-Mile all-electric Range
-                                        rating, the Clarity Plug-In Hybrid defines sophistication without compromise.
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE ACCORD FAMILY ></span>
+                                <img src="./imgs/car-small-1.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-11">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>11</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>CLARITY<span>2021</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        With roomy seating for five adults and a class-leading 47-Mile all-electric
+                                        Range rating, the Clarity Plug-In Hybrid defines sophistication without
+                                        compromise.
                                     </p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$33,400</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h4>$ 33,400</h4>
+                                            <h5>STARTING MSPR*</h5>
                                         </div>
-                                        <div class="rating__item">
+                                        <div class="vehicles__rating">
                                             <h4>47 / 340</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                            <h5>MILE EPA / COMBINED RANGE RATING</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional" style="margin-top: 60px;">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-3.PNG" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/cars-13.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>CARS</span> <span>12</span> <span>/12</span></h5>
-                                    <img src="./imgs/img-logo/clarity-2.PNG" alt="">
-                                    <p>With roomy seating for five adults and a class-leading 47-Mile all-electric Range
-                                        rating, the Clarity Plug-In Hybrid defines sophistication without compromise.
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE CLARITY FAMILY ></span>
+                                <img src="./imgs/car-small-2.webp" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item vehicles__item item-12">
+                        <a href="">
+                            <div class="vehicles__header">
+                                <h5><span>CARS </span><span>12</span><span>/ 12</span></h5>
+                            </div>
+                            <div class="vehicles__body">
+                                <h1>CLARITY<span>2021</span></h1>
+                                <div class="vehicles__text">
+                                    <p>
+                                        With roomy seating for five adults and a class-leading 47-Mile rating, the
+                                        Clarity Plug-In Hybrid defines sophistication without compromise.
                                     </p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$33,400</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
+                                    <div class="vehicles__value">
+                                        <div class="vehicles__money">
+                                            <h3>Lease Only</h3>
+                                            <h5>ATTRACTIVE RATES AVALABLE</h5>
                                         </div>
-                                        <div class="rating__item">
-                                            <h4>47 / 340</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
+                                        <div class="vehicles__rating">
+                                            <h4>360</h4>
+                                            <h5 class="pr-5">MILE EPA RANGE RATING</h5>
                                         </div>
                                     </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                    <div class="carousel__optional" style="margin-top: 60px;">
-                                        <p>EXPLORE THE ACCORD FAMILY > </p>
-                                        <img src="./imgs/car-small-3.PNG" alt="">
+                                    <div class="vehicles__btn">
+                                        <button class="hondabtn-red noBorder">EXPLORE</button>
+                                        <button class="hondabtn-white noBorder">BUILD</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="suvs-crossovers" role="tabpanel" aria-labelledby="profile-tab">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/imgs/MY21-Passport-non-VLP-full-line-YEAR-1400-2x.webp" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>SUVs & CROSSOVERS</span> <span>1</span> <span>/5</span></h5>
-                                    <img src="./imgs/img-logo/passport.PNG" alt="">
-                                    <p>With available all-wheel drive and plenty of cargo room, the Honda Passport is built to go where adventure leads you.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$32,590</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
-                                        </div>
-                                        <div class="rating__item">
-                                            <h4>20 / 25</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                </div>
+                            <div class="vehicles__footer">
+                                <span>EXPLORE THE CLARITY FAMILY ></span>
+                                <img src="./imgs/car-small-1.webp" alt="">
                             </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/MY21-hr-v-full-line-1400-2x.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>SUVs & CROSSOVERS</span> <span>2</span> <span>/5</span></h5>
-                                    <img src="./imgs/img-logo/HR-V.PNG" alt="">
-                                    <p>With sporty exterior styling, a comfortable, adjustable interior and available all-wheel drive, the HR-V is the ideal crossover.  </p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$21,020</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
-                                        </div>
-                                        <div class="rating__item">
-                                            <h4>28 / 34</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/MY21-CR-V-non-VLP-full-line-A-1400-2x.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>SUVs & CROSSOVERS</span> <span>3</span> <span>/5</span></h5>
-                                    <img src="./imgs/img-logo/CR-V.PNG" alt="">
-                                    <p>The CR-V continues to set the benchmark for crossovers, with modern styling and a turbocharged engine that comes standard on all non-hybrid trims.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$25,350</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
-                                        </div>
-                                        <div class="rating__item">
-                                            <h4>28 / 34</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/MY21-CR-V-HYBRID-non-VLP-full-line-A--1400-2x.webp" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>SUVs & CROSSOVERS</span> <span>4</span> <span>/5</span></h5>
-                                    <img src="./imgs/img-logo/CR-V-hybrid.PNG" alt="" style="height: 55px;">
-                                    <p>Combining crossover versatility, an advanced hybrid powertrain and all-wheel drive, the 2021 CR-V Hybrid blends functionality with driving bliss.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$27,850</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
-                                        </div>
-                                        <div class="rating__item">
-                                            <h4>40 / 35</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/MY21-Pilot-non-VLP-full-line-1400-2x.webp" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>SUVs & CROSSOVERS</span> <span>5</span> <span>/5</span></h5>
-                                    <img src="./imgs/img-logo/pilot.PNG" alt="">
-                                    <p>The versatile Pilot is redefining the modern family SUV, with sporty, refined looks, Honda Sensing® standard, and seating for up to eight.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$32,250</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
-                                        </div>
-                                        <div class="rating__item">
-                                            <h4>20 / 27</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev custom__control" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                        <a class="carousel-control-next custom__control" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <i class="fa fa-chevron-right"></i>
                         </a>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="minivan-truck" role="tabpanel" aria-labelledby="contact-tab">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/imgs/MY21-odyssey-nonVLP-full-line-1400.webp" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>MINIVAN & TRUCK</span> <span>1</span> <span>/2</span></h5>
-                                    <img src="./imgs/img-logo/odyssey.PNG" alt="">
-                                    <p>The Odyssey is ready to take on family adventures in style, with a redesigned exterior, refined interior and advanced technology throughout.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$31,790</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
-                                        </div>
-                                        <div class="rating__item">
-                                            <h4>19 / 28</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/imgs/MY21-hr-v-full-line-1400-2x.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>SUVs & CROSSOVERS</span> <span>2</span> <span>/5</span></h5>
-                                    <img src="./imgs/img-logo/HR-V.PNG" alt="">
-                                    <p>With sporty exterior styling, a comfortable, adjustable interior and available all-wheel drive, the HR-V is the ideal crossover.  </p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$21,020</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
-                                        </div>
-                                        <div class="rating__item">
-                                            <h4>28 / 34</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev custom__control" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                        <a class="carousel-control-next custom__control" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <i class="fa fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="electrified" role="tabpanel" aria-labelledby="contact-tab">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/imgs/MY21-CR-V-HYBRID-non-VLP-full-line-A--1400-2x.webp" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>ELECTRIFIED</span> <span>1</span> <span>/5</span></h5>
-                                    <img src="./imgs/img-logo/CR-V-hybrid.PNG" alt="" style="height: 55px;">
-                                    <p>Combining crossover versatility, an advanced hybrid powertrain and all-wheel drive, the 2021 CR-V Hybrid blends functionality with driving bliss.</p>
-                                    <div class="stat__item">
-                                        <div class="cost__item">
-                                            <h4>$27,850</h4>
-                                            <p>STARTING MSRP <span>*</span></p>
-                                        </div>
-                                        <div class="rating__item">
-                                            <h4>40 / 35</h4>
-                                            <p>CITY/HWY MPG RATING<span>*</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-red">EXPLORE</button>
-                                        <button class="hondabtn-white">BUILD</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev custom__control" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                        <a class="carousel-control-next custom__control" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <i class="fa fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="preowned" role="tabpanel" aria-labelledby="contact-tab">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/imgs/2020-CPO-homepage-full-line-A-1400.webp" class="d-block w-100" alt="...">
-                                <div class="carousel__item">
-                                    <h5> <span>PRE-OWNED</span> <span>1</span> <span>/1</span></h5>
-                                    <img src="./imgs/img-logo/pre-owned.PNG" alt="" class="pb-3">
-                                    <p>With a 182-point inspection, limited vehicle warranty with 7-year powertrain coverage and free vehicle history report, our Certified Pre-Owned Vehicles are everything you can expect from a Honda and more.</p>
-                                    <div class="carousel__button">
-                                        <button class="hondabtn-blue-white">SHOP CERTIFIED</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev custom__control" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                        <a class="carousel-control-next custom__control" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <i class="fa fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev custom__control" href="#carouselExampleControls" role="button"
-                    data-slide="prev">
-                    <i class="fa fa-chevron-left"></i>
-                </a>
-                <a class="carousel-control-next custom__control" href="#carouselExampleControls" role="button"
-                    data-slide="next">
-                    <i class="fa fa-chevron-right"></i>
-                </a>
+                <div class="tab-pane fade" id="suvs" role="tabpanel" aria-labelledby="suvs-tab">def</div>
+                <div class="tab-pane fade" id="minivan" role="tabpanel" aria-labelledby="minivan-tab">ghi</div>
+                <div class="tab-pane fade" id="electric" role="tabpanel" aria-labelledby="electric-tab">klm</div>
+                <div class="tab-pane fade" id="pre" role="tabpanel" aria-labelledby="pre-tab">nop</div>
+                <div class="tab-pane fade" id="future" role="tabpanel" aria-labelledby="future-tab">qrs</div>
             </div>
         </div>
-    </section> -->
-    <!-- <section class="services">
+        <div class="banner__res d-md-none">
+            <div class="banner__res-top banner__contents">
+                <div class="banner__text">
+                    <p>See 2020 Accord offers near you.</p>
+                    <button class="hondabtn-trans">SEE OFFERS</button>
+                </div>
+            </div>
+            <div class="banner__res-bottom banner__contents">
+                <div class="banner__text">
+                    <span>BUILD & PRICE</span>
+                    <p>Personalize a 2020 CIVIC Si COUPE to make it your own.</p>
+                    <button class="hondabtn-trans">BUILD MY VEHICLE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
         <div class="services__content">
             <div class="row">
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-md-3">
                     <div class="services__item">
                         <i class="fas fa-tools"></i>
                         <p>Build and Price</p>
-                        <button class="hondabtn-blue-white">Go</button>
+                        <!--  -->
+                        <button class="hondabtn-blue-trans d-none d-md-inline">Go</button>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-md-3">
                     <div class="services__item">
                         <i class="fas fa-tag"></i>
                         <p>See Offers</p>
-                        <button class="hondabtn-blue-white">Go</button>
+                        <button class="hondabtn-blue-trans d-none d-md-inline">Go</button>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-md-3">
                     <div class="services__item">
                         <i class="fas fa-search"></i>
                         <p>Search Inventory</p>
-                        <button class="hondabtn-blue-white">Go</button>
+                        <button class="hondabtn-blue-trans d-none d-md-inline">Go</button>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-md-3">
                     <div class="services__item">
                         <i class="fas fa-calculator"></i>
                         <p>Estimate Payments</p>
-                        <button class="hondabtn-blue-white">Go</button>
+                        <button class="hondabtn-blue-trans d-none d-md-inline">Go</button>
                     </div>
                 </div>
             </div>
@@ -778,15 +638,13 @@
         <div class="services__banner">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <div class="banner__item left">
-                        <img src="./imgs/services-1.jpg" alt="">
+                    <div class="services__item left">
                         <button class="hondabtn-blue-trans">SHOP CERTIFIED</button>
                         <p>Conditions apply</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <div class="banner__item right">
-                        <img src="./imgs/services-2.jpg" alt="">
+                    <div class="services__item right">
                         <h5>How-To Videos and Guides</h5>
                         <p>
                             Find owner manuals, instructional guides, how-to videos and helpful links designed to help
@@ -797,87 +655,65 @@
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- <section class="discover">
+    </section>
+    <section class="discover">
         <h2>Discover Honda</h2>
         <p>Explore the world of Honda through our latest news, events and videos.</p>
-        <div class="discover__content row">
-            <div class="d-block col-md-6 col-lg-4 pb-5">
-                <div class="discover__item">
-                    <img src="./imgs/discover-1.jpg" alt="">
-                    <div class="discover__text">
-                        <h5>Fighting COVID-19 Together</h5>
-                        <p>Discover how Honda has helped in the fight against COVID-19. From supporting our customers to
-                            donating personal protective equipment to our healthcare heroes, we’re dedicated to doing
-                            everything we can for our communities.</p>
-                    </div>
-                    <button class="hondabtn-blue-white">LEARN MORE</button>
+        <div class="discover__content">
+            <div class="discover__item">
+                <img src="./imgs/discover-1.jpg" alt="">
+                <div class="discover__text">
+                    <h5>Fighting COVID-19 Together</h5>
+                    <p>Discover how Honda has helped in the fight against COVID-19. From supporting our customers to
+                        donating personal protective equipment to our healthcare heroes, we’re dedicated to doing
+                        everything we can for our communities.</p>
+                    <button class="hondabtn-blue-trans">LEARN MORE</button>
+                </div>
+
+            </div>
+            <div class="discover__item">
+                <img src="./imgs/discover-2.jpg" alt="">
+                <div class="discover__text">
+                    <h5>Shop Simple Now Available</h5>
+                    <p>You can buy your next Honda online. Available in select markets.</p>
+                    <button class="hondabtn-blue-trans">LEARN MORE</button>
+                </div>
+
+            </div>
+            <div class="discover__item">
+                <img src="./imgs/discover-3.jpg" alt="">
+                <div class="discover__text">
+                    <h5>Get to Know the Redesigned 2021 Accord Hybrid</h5>
+                    <p>With its thrilling driving performance and torque, outstanding fuel-economy ratings* and all
+                        the comfort and cargo space you’ve come to expect from the Accord, the 2021 Accord Hybrid
+                        checks all your boxes and more.</p>
+                    <button class="hondabtn-blue-trans">WATCH VIDEO</button>
+                </div>
+
+            </div>
+            <div class="discover__item under-item">
+                <img src="./imgs/discover-4.jpg" alt="">
+                <div class="discover__text">
+                    <h5>Honda Awarded Best Value Brand by KBB.com for Sixth Consecutive Year</h5>
+                    <p>This marks the sixth consecutive year that Honda has been honored with the Best Value Brand
+                        award by Kelley Blue Book’s KBB.com.⁠* In their announcement, the KBB.com editors noted how
+                        consistent “quality, reliability, and resale value” across the entire Honda vehicle lineup
+                        contributed to the win.</p>
+                    <button class="hondabtn-blue-trans">LEARN MORE</button>
                 </div>
             </div>
-            <div class="d-block col-md-6 col-lg-4 pb-5">
-                <div class="discover__item">
-                    <img src="./imgs/discover-2.jpg" alt="">
-                    <div class="discover__text">
-                        <h5>Shop Simple Now Available</h5>
-                        <p>You can buy your next Honda online. Available in select markets.</p>
-                    </div>
-                    <button class="hondabtn-blue-white">LEARN MORE</button>
-                </div>
-            </div>
-            <div class="d-block col-md-6 col-lg-4 pb-5">
-                <div class="discover__item">
-                    <img src="./imgs/discover-3.jpg" alt="">
-                    <div class="discover__text">
-                        <h5>Get to Know the Redesigned 2021 Accord Hybrid</h5>
-                        <p>With its thrilling driving performance and torque, outstanding fuel-economy ratings* and all
-                            the comfort and cargo space you’ve come to expect from the Accord, the 2021 Accord Hybrid
-                            checks all your boxes and more.</p>
-                    </div>
-                    <button class="hondabtn-blue-white">LEARN MORE</button>
-                </div>
-            </div>
-            <div class="d-block col-md-6 col-lg-4 pb-5">
-                <div class="discover__item">
-                    <img src="./imgs/discover-4.jpg" alt="">
-                    <div class="discover__text">
-                        <h5>Honda Awarded Best Value Brand by KBB.com for Sixth Consecutive Year</h5>
-                        <p>This marks the sixth consecutive year that Honda has been honored with the Best Value Brand
-                            award by Kelley Blue Book’s KBB.com.⁠* In their announcement, the KBB.com editors noted how
-                            consistent “quality, reliability, and resale value” across the entire Honda vehicle lineup
-                            contributed to the win.</p>
-                    </div>
-                    <button class="hondabtn-blue-white">LEARN MORE</button>
-                </div>
-            </div>
-            <div class="d-block col-md-6 col-lg-4 pb-5">
-                <div class="discover__item">
-                    <img src="./imgs/discover-5.jpg" alt="">
-                    <div class="discover__text">
-                        <h5>Honda Sensing®</h5>
-                        <p>Learn more about our suite of safety and driver-assistive technologies designed to alert you
-                            to things you might miss while driving.</p>
-                    </div>
-                    <button class="hondabtn-blue-white">LEARN MORE</button>
+            <div class="discover__item under-item last-item">
+                <img src="./imgs/discover-5.jpg" alt="">
+                <div class="discover__text">
+                    <h5>Honda Sensing®</h5>
+                    <p>Learn more about our suite of safety and driver-assistive technologies designed to alert you
+                        to things you might miss while driving.</p>
+                    <button class="hondabtn-blue-trans">LEARN MORE</button>
                 </div>
             </div>
         </div>
-        <button class="hondabtn-red">MORE NEWS AND EVENTS</button>
-    </section> -->
-    <div class="banner__res d-md-none">
-        <div class="banner__res-top banner__contents">
-            <div class="banner__text">
-                <p>See 2020 Accord offers near you.</p>
-                <button class="hondabtn-trans">SEE OFFERS</button>
-            </div>
-        </div>
-        <div class="banner__res-bottom banner__contents">
-            <div class="banner__text">
-                <span>BUILD & PRICE</span>
-                <p>Personalize a 2020 CIVIC Si COUPE to make it your own.</p>
-                <button class="hondabtn-trans">BUILD MY VEHICLE</button>
-            </div>
-        </div>
-    </div>
+        <button class="hondabtn-red btn-more noBorder">MORE NEWS AND EVENTS</button>
+    </section>
     <section class="contact">
         <div class="contact__content">
             <div class="contact__top">
@@ -904,7 +740,7 @@
                     <p>Receive the latest news and exclusive updates.</p>
                     <button class="hondabtn-white">STAY INFORMED</button>
                 </div>
-                
+
             </div>
             <div class="contact__search-down">
                 <div class="search__text">
@@ -919,7 +755,8 @@
             <div class="links__vehicles links__item">
                 <nav class="navbar navbar-expand-custom navbar-light">
                     <h5>Vehicles</h5>
-                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse" data-target="#vehicles">
+                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse"
+                        data-target="#vehicles">
                         <p class="navbar-brand mb-0" href="#">Vehicles</p>
                         <div class="open-circle">
                             <span class=" top-bar"></span>
@@ -983,13 +820,14 @@
             <div class="links__shopping links__item">
                 <nav class="navbar navbar-expand-custom navbar-light">
                     <h5>Shopping Tools</h5>
-                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse" data-target="#shoppingTool">
+                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse"
+                        data-target="#shoppingTool">
                         <p class="navbar-brand mb-0" href="#">Shopping Tools</p>
                         <div class="open-circle">
                             <span class=" top-bar"></span>
                             <span class=" mid-bar"></span>
                         </div>
-                        
+
                     </button>
                     <div class="collapse navbar-collapse" id="shoppingTool">
                         <ul class="navbar-nav">
@@ -1024,13 +862,15 @@
             <div class="link__discover links__item">
                 <nav class="navbar navbar-expand-custom navbar-light">
                     <h5>Discover Honda</h5>
-                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse" data-target="#discover" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse"
+                        data-target="#discover" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <p class="navbar-brand mb-0" href="#">Discover Honda</p>
                         <div class="open-circle">
                             <span class=" top-bar"></span>
                             <span class=" mid-bar"></span>
                         </div>
-                        
+
                     </button>
                     <div class="collapse navbar-collapse" id="discover">
                         <ul class="navbar-nav">
@@ -1065,13 +905,14 @@
             <div class="links__support links__item">
                 <nav class="navbar navbar-expand-custom navbar-light">
                     <h5>Help & Support</h5>
-                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse" data-target="#support">
+                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse"
+                        data-target="#support">
                         <p class="navbar-brand mb-0" href="#">Help & Support</p>
                         <div class="open-circle">
                             <span class=" top-bar"></span>
                             <span class=" mid-bar"></span>
                         </div>
-                        
+
                     </button>
                     <div class="collapse navbar-collapse" id="support">
                         <ul class="navbar-nav">
@@ -1085,7 +926,8 @@
                                 <a class="nav-link" href="#">Mobility Assistance Program</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Rear Entertainment System Accessibility for Individuals with Disabilities</a>
+                                <a class="nav-link" href="#">Rear Entertainment System Accessibility for Individuals
+                                    with Disabilities</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">COVID-19 Assistance</a>
@@ -1097,13 +939,14 @@
             <div class="links__owners links__item">
                 <nav class="navbar navbar-expand-custom navbar-light">
                     <h5>Owners</h5>
-                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse" data-target="#owners">
+                    <button class="navbar-toggler collapsed noBorder" type="button" data-toggle="collapse"
+                        data-target="#owners">
                         <p class="navbar-brand mb-0" href="#">Owners</p>
                         <div class="open-circle">
                             <span class=" top-bar"></span>
                             <span class=" mid-bar"></span>
                         </div>
-                        
+
                     </button>
                     <div class="collapse navbar-collapse" id="owners">
                         <ul class="navbar-nav">
@@ -1135,7 +978,9 @@
         <div class="footer__content">
             <div class="footer__copyright row">
                 <div class="col-12 col-md-6 footer__left">
-                    <span><a href="">©2020 American Honda Motor Co,</a> Inc. All information contained herein applies to U.S. vehicles only. For non-U.S.-distributor information go to <a href="">world.honda.com.</a> </span>
+                    <span><a href="">©2020 American Honda Motor Co,</a> Inc. All information contained herein applies to
+                        U.S. vehicles only. For non-U.S.-distributor information go to <a href="">world.honda.com.</a>
+                    </span>
                 </div>
                 <div class="col-12 col-md-6 footer__right">
                     <a href="">Privacy Policy</a>
@@ -1145,7 +990,7 @@
                     <a href="">Term & Conditions</a>
                     <a href="">Do Not Sell My Personal Information</a>
                     <a href="">Site Map</a>
-                    
+
                 </div>
             </div>
             <div class="footer__logo">
@@ -1157,39 +1002,63 @@
                 <img class="d-none d-md-block" src="./imgs/logo-honda.svg" alt="">
                 <img class="d-none d-md-block" src="./imgs/logo-honda.svg" alt="">
                 <img class="d-none d-md-block" src="./imgs/logo-honda.svg" alt="">
-                
+
             </div>
             <div class="footer__cookies">
-                <p>We use cookies to improve your experience on this site and show you personalized advertising. To find out more, read our <a href="">Cookie Policy</a>.</p>
+                <p>We use cookies to improve your experience on this site and show you personalized advertising. To find
+                    out more, read our <a href="">Cookie Policy</a>.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        
+
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <!-- BS4 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 
     <!-- SLICK -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
     <script>
         $(document).ready(function(){
+            $('.multiple-items').slick({
+                infinite: false,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                prevArrow:'<i class="fa fa-arrow-left"></i>',
+                nextArrow:'<i class="fa fa-arrow-right"></i>'
+            });
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
             $('.single-item').slick({
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 3000,
                 dots: true,
-                infinite: false,
-                prevArrow:'<i class="fa fa-angle-left"></i>',
-                nextArrow:'<i class="fa fa-angle-right"></i>',
-                
+                infinite: true,
+                prevArrow: '<i class="fa fa-angle-left"></i>',
+                nextArrow: '<i class="fa fa-angle-right"></i>',
+
             })
         })
     </script>
+
+    <!-- Waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

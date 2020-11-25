@@ -1,9 +1,9 @@
-.banner{
+.banner {
     background-color: $color-blue-tittle;
     height: 250px;
     margin-bottom: 250px;
     position: relative;
-    .banner__container{
+    .banner__container {
         position: absolute;
         bottom: -250px;
         left: 0;
@@ -12,43 +12,46 @@
         background-color: whitesmoke;
         z-index: 0;
     }
-    .banner__content{
+    .banner__content {
         width: 88%;
         margin: 0 auto;
         padding: 70px 0;
         display: flex;
         justify-content: space-between;
-        .banner__item{
+        .banner__item {
             position: relative;
             z-index: 1;
             width: 48%;
             height: 370px;
             background-position: center;
             background-size: cover;
+            margin-top: 10px;
         }
-        .item-left{
-            background-image: url('../imgs/carousel-small-1.jpg');
+        .item-left {
+            animation-delay: 0.4s;
+            background-image: url("../imgs/carousel-small-1.jpg");
             position: relative;
-            .banner__text-bottom{
+            .banner__text-bottom {
                 position: absolute;
                 width: 100%;
                 text-align: center;
                 bottom: 10%;
                 color: $color-white;
-                p{
+                p {
                     font-size: 17px;
                     font-weight: bold;
                 }
-                button{
+                button {
                     padding: 3px 15px;
                     font-size: 15px;
                 }
             }
         }
-        .item-right{
-            background-image: url('../imgs/carousel-small-2.jpg');
+        .item-right {
+            animation-delay: 0.4s;
+            background-image: url("../imgs/carousel-small-2.jpg");
             position: relative;
-            .banner__text-left{
+            .banner__text-left {
                 position: absolute;
                 width: 37%;
                 left: 6%;
@@ -56,17 +59,16 @@
                 color: $color-white;
                 font-size: 16px;
                 font-weight: bold;
-                
             }
-            span{
-                background-color: #0171B1;
+            span {
+                background-color: #0171b1;
                 padding: 7px 10px;
             }
-            p{
+            p {
                 margin-top: 20px;
                 margin-bottom: 30px;
             }
-            button{
+            button {
                 padding: 3px 15px;
                 font-size: 15px;
                 min-width: 165px;
@@ -75,65 +77,74 @@
     }
 }
 
-.banner__res{
+.banner__res {
     background-color: whitesmoke;
     padding: 30px 20px;
-    .banner__res-top{
+    .banner__res-top {
         background-image: url("../imgs/carousel-small-1.jpg");
         background-size: cover;
         background-position: center;
         height: 400px;
         margin-bottom: 30px;
     }
-    .banner__res-bottom{
+    .banner__res-bottom {
         background-image: url("../imgs/carousel-small-2-res-2.jpg");
         background-size: cover;
         background-position: center;
         height: 400px;
-        
-        span{
-            background-color: #0171B1;
+
+        span {
+            background-color: #0171b1;
             padding: 6px 24px;
         }
     }
-    .banner__contents{
+    .banner__contents {
         position: relative;
-        .banner__text{
+        .banner__text {
             position: absolute;
             width: 100%;
             text-align: center;
             bottom: 10%;
             color: $color-white;
-            p{
+            p {
                 font-size: 17px;
                 font-weight: bold;
                 margin-top: 10px;
             }
-            button{
+            button {
                 padding: 3px 15px;
                 font-size: 15px;
             }
         }
     }
 }
+@keyframes itemsFade {
+    0% {
+        opacity: 0;
+        transform: translateY(160px);
+    }
+    20% {
+        opacity: 0;
+    }
+}
 
-@include responsive('breakpoint-1'){
-    .banner{
-        .banner__content{
-            .item-right{
-                background-image: url('../imgs/carousel-small-2-res-1.jpg');
-                .banner__text-left{
+@include responsive("breakpoint-1") {
+    .banner {
+        .banner__content {
+            .item-right {
+                background-image: url("../imgs/carousel-small-2-res-1.jpg");
+                .banner__text-left {
                     width: 88%;
                 }
-                p{
+                p {
                     margin-bottom: 45px;
                 }
             }
         }
     }
 }
-@include responsive('breakpoint-2'){
-    .banner{
+@include responsive("breakpoint-2") {
+    .banner {
         display: none;
     }
 }
